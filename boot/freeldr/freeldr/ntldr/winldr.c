@@ -539,6 +539,7 @@ LoadModule(
         MmFreeMemory(BaseAddress);
         BaseAddress = NULL;
     }
+    DbgPrint("LDR load module base address %i\n", (int)BaseAddress);
 
     return BaseAddress;
 }

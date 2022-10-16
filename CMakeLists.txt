@@ -370,6 +370,9 @@ Enable this if the module uses typeid or dynamic_cast. You will probably need to
     add_subdirectory(sdk/tools/wpp)
     add_subdirectory(win32ss)
 
+    # TODO: only build on Xbox...
+    add_subdirectory(xboxkrnl)
+
     # Create the registry hives
     create_registry_hives()
 
