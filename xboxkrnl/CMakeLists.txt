@@ -13,6 +13,7 @@ if (CMAKE_C_COMPILER_ID STREQUAL "GNU" OR CMAKE_C_COMPILER_ID STREQUAL "Clang")
 endif()
 
 include(../ntoskrnl/ntos.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/xbox.cmake)
 
 set(XBOXKRNL_SOURCE ${SOURCE})
 set(XBOXKRNL_ASM_SOURCE ${ASM_SOURCE})
